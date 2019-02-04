@@ -1,11 +1,12 @@
 import java.io.*;
-public class SringRev {
-	public static void main(String args[])throws IOException{
-		DataInputStream dis = new DataInputStream(System.in);
-		System .out.println("Enter a String :");
-		String str = dis.readLine();
-		String rstr = new StringBuffer(str).reverse().toString();
-		System.out.println("The String after reversing : "+rstr);
-		
+import java.util.*;
+class Stringrev {
+	public static void main (String[] args) 
+	{
+	    Scanner sc=new Scanner (System.in);
+	    String c=sc.next();
+	    StringBuffer sb=new StringBuffer(c);
+	    
+		System.out.println(sb.reverse());
 	}
 }
